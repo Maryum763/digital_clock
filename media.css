@@ -1,0 +1,89 @@
+@media screen and (max-width:800px) {
+
+
+    .container {
+        width: fit-content;
+        height: 180px;
+
+    }
+
+    .clock {
+        width: fit-content;
+        height: 100%;
+        background-color: rgba(0, 255, 191, 0.11);
+
+    }
+
+    .container::before {
+        content: '';
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .container::after {
+        content: '';
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .clock span {
+        font-size: 60px;
+        width: 100px;
+
+    }
+
+    .clock span::after {
+        /* content: 'HOURS'; */
+        font-size: 12px;
+        position: absolute;
+
+    }
+}
+
+@media screen and (max-width:660px) {
+    .container {
+        width: 100%;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .clock {
+        width: 80%;
+        height: 100%;
+        background-color: rgba(0, 255, 191, 0.11);
+        justify-content: center;
+    }
+
+    .container::before {
+        content: '';
+        width: 80px;
+        height: 80px;
+        left: 10px;
+        top: -50px;
+        /* background-color: aliceblue; */
+    }
+
+    .container::after {
+        content: '';
+        width: 100px;
+        height: 100px;
+        right: 0px;
+        bottom: -50px;
+    }
+
+    .clock span {
+        font-size: 60px;
+        width: 100px;
+
+    }
+
+    .clock span::after {
+        /* content: 'HOURS'; */
+        font-size: 12px;
+        position: absolute;
+
+    }
+}
